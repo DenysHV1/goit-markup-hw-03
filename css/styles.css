@@ -42,7 +42,6 @@ img {
 
 /* <!--~~~~~~~~~~~~~~~~~~~~~Header~~~~~~~~~~~~~~~~~~~~~~~~--> */
 .web-studio-header {
-  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -56,7 +55,6 @@ img {
   display: flex;
   justify-content: left;
   align-items: center;
-  gap: 76px;
 }
 
 .header-nav-list {
@@ -76,6 +74,7 @@ img {
 
 .header-nav-item {
   width: calc((100% - 80px) / 3);
+  padding: 24px 0;
 }
 
 .ws-logo {
@@ -87,6 +86,7 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   flex-shrink: 0;
+  margin-right: 76px
 }
 
 .logo-span {
@@ -101,6 +101,7 @@ img {
   font-weight: 500;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  
 }
 .nav-item__link:hover {
   color: #404bbf;
@@ -152,6 +153,9 @@ img {
 
 .ws-order {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  width: 100%;
 }
 
 .home-page__title {
@@ -162,7 +166,6 @@ img {
   text-align: center;
   color: #fff;
   max-width: 496px;
-  margin-top: 188px;
   margin-bottom: 48px;
 }
 
@@ -175,9 +178,10 @@ img {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   border-radius: 4px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
-  margin-bottom: 188px;
+  border: none;
+  
 }
 
 .order__button:hover {
@@ -194,8 +198,17 @@ img {
 
 /* <!-- Second section "ws-offer-for-users" --> */
 
-.offer__title--hide {
-  display: none;
+.visually-hidden {
+    position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .offer-list-all {
@@ -208,7 +221,6 @@ img {
 
 .offer-list-text {
   max-width: 264px;
-  gap: 8px;
 }
 
 .offer-list__title {
@@ -217,17 +229,21 @@ img {
   line-height: 1.2;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .offer-list__text {
   letter-spacing: 0.02em;
 }
 
-/* <!-- Third section "ws-team" --> */
+/* <!-- ///////////////Third section "WS-TEAM"/////////// --> */
+
+/* селектор для секції */
 .ws-team {
   background-color: #f4f4fd;
 }
 
+/* допоміжний селектор для контейнера */
 .ws-team-inner {
   display: flex;
   flex-direction: column;
@@ -235,6 +251,7 @@ img {
   gap: 72px;
 }
 
+/* список */
 .team-list {
   display: flex;
   align-items: start;
@@ -244,6 +261,14 @@ img {
   gap: 24px;
 }
 
+/* один із блоків списку */
+.team-list-item {
+	background-color: #ffffff;
+	border-radius: 0px 0px 4px 4px;
+	width: calc((100% - 72px) / 4);
+  }
+
+/* заголовок третьої секції */
 .team-list__title {
   font-size: 36px;
   line-height: 1.11;
@@ -254,15 +279,18 @@ img {
   margin-bottom: 72px;
 }
 
-.team-list-item {
-  background-color: #ffffff;
-  max-width: 264px;
+
+/* контейнер для заголовку списку і параграфа */
+.team-div-for-text {
+	padding: 32px 0;
 }
 
+/* картинка в середині списку */
 .team-item__img {
   max-width: 100%;
 }
 
+/* заголовок всередині списку */
 .team-item__name {
   font-weight: 500;
   font-size: 20px;
@@ -270,47 +298,49 @@ img {
   text-align: center;
   color: #2e2f42;
   letter-spacing: 0.02em;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
+/* параграф в середині списку */
 .team-item__profession {
   text-align: center;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
   flex-shrink: 0;
 }
 
-/* <!-- the four section "Our Portfolio" --> */
+/* <!-- ///////////////the four section "Our PORTFOLIO"/////////// --> */
 
+/* допоміжний клас для головного контейнера  */
+.portfolio-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+
+/* список */
 .our-portfolio-list {
   display: flex;
   align-items: top;
   gap: 48px 24px;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
-.portfolio-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 48px;
-}
-
+/* один із блоків списку */
 .our-portfolio-item {
-  max-width: 360px;
-  /* border: 1px solid #e7e9fc; */
+  width: calc((100% - 48px) / 3);
 }
 
-.our-portfolio-item .our-portfolio-item__img {
-  border: none;
+/* контейнер для заголовку списку і параграфа */
+.portfolio-div-for-text {
+	padding: 32px 16px;
+	border: 1px solid #e7e9fc;
+	border-top: none;
 }
 
-.our-portfolio-item__img {
-  max-width: 100%;
-}
 
+/* заголовок четвертої секції */
 .our-portfolio__title {
   font-size: 36px;
   line-height: 1.11;
@@ -318,30 +348,29 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  margin-bottom: 24px;
+  margin-bottom: 72px;
 }
 
+/* картинка в середині списку */
+.our-portfolio-item__img {
+	max-width: 100%;
+}
+
+/* заголовок всередині списку */
 .our-portfolio-item__title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: #2e2f42;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
+  margin-bottom: 8px;
 }
 
+/* параграф в середині списку */
 .our-portfolio-item__text {
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
 }
+
 
 /* <!--~~~~~~~~~~~~~~~~~~~~~Footer~~~~~~~~~~~~~~~~~~~~~~~~--> */
 
@@ -358,9 +387,22 @@ img {
   color: #f4f4fd;
   letter-spacing: 0.02em;
   max-width: 264px;
-  margin-top: 16px;
+  
 }
 
 .footer-logo__span {
   color: #f4f4fd;
 }
+
+.ws-logo-footer {
+	display: inline-block;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #4d5ae5;
+	flex-shrink: 0;
+	margin-bottom: 16px;
+  }
