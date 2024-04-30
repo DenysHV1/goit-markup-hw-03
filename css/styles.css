@@ -62,7 +62,6 @@ img {
   align-items: center;
   gap: 40px;
   margin: 0;
-  padding: 24px 0;
 }
 
 .contacts-list {
@@ -101,6 +100,8 @@ img {
   font-weight: 500;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 .nav-item__link:hover {
   color: #404bbf;
