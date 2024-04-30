@@ -86,7 +86,7 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   flex-shrink: 0;
-  margin-right: 76px
+  margin-right: 76px;
 }
 
 .logo-span {
@@ -101,7 +101,6 @@ img {
   font-weight: 500;
   color: #2e2f42;
   letter-spacing: 0.02em;
-  
 }
 .nav-item__link:hover {
   color: #404bbf;
@@ -181,7 +180,6 @@ img {
   min-width: 169px;
   height: 56px;
   border: none;
-  
 }
 
 .order__button:hover {
@@ -199,7 +197,7 @@ img {
 /* <!-- Second section "ws-offer-for-users" --> */
 
 .visually-hidden {
-    position: absolute;
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -263,10 +261,10 @@ img {
 
 /* один із блоків списку */
 .team-list-item {
-	background-color: #ffffff;
-	border-radius: 0px 0px 4px 4px;
-	width: calc((100% - 72px) / 4);
-  }
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
+}
 
 /* заголовок третьої секції */
 .team-list__title {
@@ -279,10 +277,9 @@ img {
   margin-bottom: 72px;
 }
 
-
 /* контейнер для заголовку списку і параграфа */
 .team-div-for-text {
-	padding: 32px 0;
+  padding: 32px 0;
 }
 
 /* картинка в середині списку */
@@ -312,10 +309,10 @@ img {
 
 /* допоміжний клас для головного контейнера  */
 .portfolio-inner {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* список */
 .our-portfolio-list {
@@ -334,11 +331,10 @@ img {
 
 /* контейнер для заголовку списку і параграфа */
 .portfolio-div-for-text {
-	padding: 32px 16px;
-	border: 1px solid #e7e9fc;
-	border-top: none;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
-
 
 /* заголовок четвертої секції */
 .our-portfolio__title {
@@ -353,7 +349,7 @@ img {
 
 /* картинка в середині списку */
 .our-portfolio-item__img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 /* заголовок всередині списку */
@@ -371,7 +367,6 @@ img {
   letter-spacing: 0.02em;
 }
 
-
 /* <!--~~~~~~~~~~~~~~~~~~~~~Footer~~~~~~~~~~~~~~~~~~~~~~~~--> */
 
 .web-studio-footer {
@@ -387,7 +382,6 @@ img {
   color: #f4f4fd;
   letter-spacing: 0.02em;
   max-width: 264px;
-  
 }
 
 .footer-logo__span {
@@ -395,14 +389,14 @@ img {
 }
 
 .ws-logo-footer {
-	display: inline-block;
-	font-family: "Raleway", sans-serif;
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 1.17;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-	color: #4d5ae5;
-	flex-shrink: 0;
-	margin-bottom: 16px;
-  }
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  flex-shrink: 0;
+  margin-bottom: 16px;
+}
